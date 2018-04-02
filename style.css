@@ -1,0 +1,17 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+    margin: 2em;
+}
+.rectangle {
+    background: gray;
+    margin: 10px;
+    color: white;
+}
+.red-rectangle {
+    background: red;
+    margin: 10px;
+    color: black;
+}

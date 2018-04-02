@@ -1,0 +1,378 @@
+const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+
+// 1
+
+const newP = document.createElement("p");
+const destination1 = document.getElementById("div1");
+
+for (let i = 1; i <= 20; i++) {
+    if (i == 20) {
+        const newText = document.createTextNode(i);
+        newP.appendChild(newText);
+    } else {
+        const newText = document.createTextNode(i + ", ");
+        newP.appendChild(newText);
+    }
+}
+
+destination1.appendChild(newP);
+
+// 2
+
+const newP2 = document.createElement("p");
+const destination2 = document.getElementById("div2");
+
+for (let i = 2; i <= 20; i = i + 2) {
+    if (i == 20) {
+        const newText2 = document.createTextNode(i);
+        newP2.appendChild(newText2);
+    } else {
+        const newText2 = document.createTextNode(i + ", ");
+        newP2.appendChild(newText2);
+    }
+}
+
+destination2.appendChild(newP2);
+
+// 3
+
+const newP3 = document.createElement("p");
+const destination3 = document.getElementById("div3");
+
+for (let i = 1; i <= 20; i = i + 2) {
+    if (i == 19) {
+        const newText3 = document.createTextNode(i);
+        newP3.appendChild(newText3);
+    } else {
+        const newText3 = document.createTextNode(i + ", ");
+        newP3.appendChild(newText3);
+    }
+}
+
+destination3.appendChild(newP3);
+
+// 4
+
+const newP4 = document.createElement("p");
+const destination4 = document.getElementById("div4");
+
+for (let i = 5; i <= 100; i = i + 5) {
+    if (i == 100) {
+        const newText4 = document.createTextNode(i);
+        newP4.appendChild(newText4);
+    } else {
+        const newText4 = document.createTextNode(i + ", ");
+        newP4.appendChild(newText4);
+    }
+}
+
+destination4.appendChild(newP4);
+
+// 5
+
+const newP5 = document.createElement("p");
+const destination5 = document.getElementById("div5");
+
+for (let i = 1; i <= 10; i++) {
+    if (i == 10) {
+        const newText5 = document.createTextNode(i*i);
+        newP5.appendChild(newText5);
+    } else {
+        const newText5 = document.createTextNode(i*i + ", ");
+        newP5.appendChild(newText5);
+    }
+}
+
+destination5.appendChild(newP5);
+
+// 6
+
+const newP6 = document.createElement("p");
+const destination6 = document.getElementById("div6");
+
+for (let i = 20; i >= 1; i--) {
+    if (i == 1) {
+        const newText6 = document.createTextNode(i);
+        newP6.appendChild(newText6);
+    } else {
+        const newText6 = document.createTextNode(i + ", ");
+        newP6.appendChild(newText6);
+    }
+}
+
+destination6.appendChild(newP6);
+
+// 7
+
+const newP7 = document.createElement("p");
+const destination7 = document.getElementById("div7");
+
+for (let i = 20; i >= 1; i = i - 2) {
+    if (i == 2) {
+        const newText7 = document.createTextNode(i);
+        newP7.appendChild(newText7);
+    } else {
+        const newText7 = document.createTextNode(i + ", ");
+        newP7.appendChild(newText7);
+    }
+}
+
+destination7.appendChild(newP7);
+
+// 8
+
+const newP8 = document.createElement("p");
+const destination8 = document.getElementById("div8");
+
+for (let i = 19; i >= 1; i = i - 2) {
+    if (i == 1) {
+        const newText8 = document.createTextNode(i);
+        newP8.appendChild(newText8);
+    } else {
+        const newText8 = document.createTextNode(i + ", ");
+        newP8.appendChild(newText8);
+    }
+}
+
+destination8.appendChild(newP8);
+
+// 9
+
+const newP9 = document.createElement("p");
+const destination9 = document.getElementById("div9");
+
+for (let i = 100; i >= 1; i = i - 5) {
+    if (i == 5) {
+        const newText9 = document.createTextNode(i);
+        newP9.appendChild(newText9);
+    } else {
+        const newText9 = document.createTextNode(i + ", ");
+        newP9.appendChild(newText9);
+    }
+}
+
+destination9.appendChild(newP9);   
+
+// 10
+
+const newP10 = document.createElement("p");
+const destination10 = document.getElementById("div10");
+
+for (let i = 10; i >= 1; i--) {
+    if (i == 1) {
+        const newText10 = document.createTextNode(i*i);
+        newP10.appendChild(newText10);
+    } else {
+        const newText10 = document.createTextNode(i*i + ", ");
+        newP10.appendChild(newText10);
+    }
+}
+
+destination10.appendChild(newP10);
+
+// 11
+
+const newP11 = document.createElement("p");
+const destination11 = document.getElementById("div11");
+
+for (let i = 0; i <= 19; i++) {
+    if (i == 19) {
+        const newText11 = document.createTextNode(sampleArray[i]);
+        newP11.appendChild(newText11);
+    } else {
+        const newText11 = document.createTextNode(sampleArray[i] + ", ");
+        newP11.appendChild(newText11);
+    }
+}
+
+destination11.appendChild(newP11);
+
+// 12
+
+const newP12 = document.createElement("p");
+const destination12 = document.getElementById("div12");
+
+for (let i = 0; i <= 19; i++) {
+    if (sampleArray[i]%2 == 0) {
+        if (i == 19) {
+            const newText12 = document.createTextNode(sampleArray[i]);
+            newP12.appendChild(newText12);
+        } else {
+            const newText12 = document.createTextNode(sampleArray[i] + ", ");
+            newP12.appendChild(newText12);
+        }
+    }
+}
+
+destination12.appendChild(newP12);
+
+// 13
+
+const newP13 = document.createElement("p");
+const destination13 = document.getElementById("div13");
+
+for (let i = 0; i <= 19; i++) {
+    if (sampleArray[i]%2 != 0) {
+        if (i == 17) {
+            const newText13 = document.createTextNode(sampleArray[i]);
+            newP13.appendChild(newText13);
+        } else {
+            const newText13 = document.createTextNode(sampleArray[i] + ", ");
+            newP13.appendChild(newText13);
+        }
+    }
+}
+
+destination13.appendChild(newP13);
+
+// 14
+
+const newP14 = document.createElement("p");
+const destination14 = document.getElementById("div14");
+
+for (let i = 0; i <= 19; i++) {
+    if (i == 19) {
+        const newText14 = document.createTextNode(Math.pow(sampleArray[i], 2));
+        newP14.appendChild(newText14);
+    } else {
+        const newText14 = document.createTextNode(Math.pow(sampleArray[i], 2) + ", ");
+        newP14.appendChild(newText14);
+    }
+}
+
+destination14.appendChild(newP14);
+
+// 15
+
+const newP15 = document.createElement("p");
+const destination15 = document.getElementById("div15");
+
+let x15 = 0;
+
+for (let i = 1; i <= 20; i++) {
+
+    x15 += i;
+
+    if (i == 20) {
+        const newText15 = document.createTextNode(x15);
+        newP15.appendChild(newText15);
+    }
+}
+
+destination15.appendChild(newP15);
+
+// 16
+
+const newP16 = document.createElement("p");
+const destination16 = document.getElementById("div16");
+
+let x16 = 0;
+
+for (let i = 0; i <= 19; i++) {
+
+    x16 += sampleArray[i];
+
+    if (i == 19) {
+        const newText16 = document.createTextNode(x16);
+        newP16.appendChild(newText16);
+    }
+}
+
+destination16.appendChild(newP16);
+
+// 17
+
+const newP17 = document.createElement("p");
+const destination17 = document.getElementById("div17");
+const newText17 = document.createTextNode(Math.min(...sampleArray));
+newP17.appendChild(newText17);
+destination17.appendChild(newP17);
+
+// 18
+
+const newP18 = document.createElement("p");
+const destination18 = document.getElementById("div18");
+const newText18 = document.createTextNode(Math.max(...sampleArray));
+newP18.appendChild(newText18);
+destination18.appendChild(newP18);
+
+// 19
+
+for (let i = 1; i <= 20; i++) {
+    const newDiv19 = document.createElement("div");
+    newDiv19.className = "rectangle";
+    newDiv19.style.width = 100 + "px";
+    newDiv19.style.height = 20 + "px";
+
+    var newText19 = document.createTextNode(i);
+    newDiv19.appendChild(newText19);
+
+    const destination19 = document.getElementById("div19");
+    destination19.appendChild(newDiv19);
+}
+
+// 20
+
+for (let i = 1; i <= 20; i++) {
+    const newDiv20 = document.createElement("div");
+    newDiv20.className = "rectangle";
+    newDiv20.style.width = 100 + (i*5) + "px";
+    newDiv20.style.height = 20 + "px";
+
+    var newText20 = document.createTextNode(100 + (i*5));
+    newDiv20.appendChild(newText20);
+
+    const destination20 = document.getElementById("div20");
+    destination20.appendChild(newDiv20);
+}
+
+// 21
+
+for (let i = 0; i <= 19; i++) {
+    const newDiv21 = document.createElement("div");
+    newDiv21.className = "rectangle";
+    newDiv21.style.width = sampleArray[i] + "px";
+    newDiv21.style.height = 21 + "px";
+
+    var newText21 = document.createTextNode(sampleArray[i]);
+    newDiv21.appendChild(newText21);
+
+    const destination21 = document.getElementById("div21");
+    destination21.appendChild(newDiv21);
+}
+
+// 22
+
+for (let i = 0; i <= 19; i++) {
+    const newDiv22 = document.createElement("div");
+    newDiv22.className = "rectangle";
+    newDiv22.style.width = sampleArray[i] + "px";
+    newDiv22.style.height = 22 + "px";
+    if (i % 2 != 0) {
+        newDiv22.className = "red-rectangle";
+    }
+
+    var newText22 = document.createTextNode(sampleArray[i]);
+    newDiv22.appendChild(newText22);
+
+    const destination22 = document.getElementById("div22");
+    destination22.appendChild(newDiv22);
+}
+
+// 23
+
+for (let i = 0; i <= 19; i++) {
+    const newDiv23 = document.createElement("div");
+    newDiv23.className = "rectangle";
+    newDiv23.style.width = sampleArray[i] + "px";
+    newDiv23.style.height = 23 + "px";
+    if (sampleArray[i] % 2 == 0) {
+        newDiv23.className = "red-rectangle";
+    }
+
+    var newText23 = document.createTextNode(sampleArray[i]);
+    newDiv23.appendChild(newText23);
+
+    const destination23 = document.getElementById("div23");
+    destination23.appendChild(newDiv23);
+}
